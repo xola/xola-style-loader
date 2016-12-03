@@ -32,7 +32,7 @@ module.exports = function (source) {
           const i = matches.index + matches[0].length;
           const className = basename.replace("_", "-");
           out = out.substring(0, i)
-            + "\n  className: '." + className + "',"
+            + "\n  className: '" + className + "',"
             + out.substring(i);
         }
 
