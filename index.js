@@ -25,7 +25,7 @@ module.exports = function (source) {
         console.log("Injecting style " + filepath);
         var out = "import Style from './" + filename + "';\n" + source;
 
-        const re = /export default.*\{/;
+        const re = /export .*\{/;
         const matches = re.exec(out);
         if (matches) {
           // we are able to determine where to inject the template, so do it
